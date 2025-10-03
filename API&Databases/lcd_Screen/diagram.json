@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": -195.25,
+      "left": -34.85,
+      "attrs": { "env": "micropython-20241129-v1.24.1" }
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd3",
+      "top": -281.6,
+      "left": 82.4,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "lcd3:GND", "pico:GND.8", "black", [ "h0" ] ],
+    [ "lcd3:VCC", "pico:3V3", "red", [ "h0" ] ],
+    [ "lcd3:SDA", "pico:GP0", "green", [ "h0" ] ],
+    [ "lcd3:SCL", "pico:GP1", "blue", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
