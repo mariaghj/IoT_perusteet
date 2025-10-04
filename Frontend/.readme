@@ -34,15 +34,13 @@ The goal was to create a simple IoT pipeline:
 4. **Error Handling**  
    - If fetching data fails, an error message is displayed in the `#output` div and logged to the console.
 
-## Screenshots
+## Paths
 
 **ThingSpeak Channel Data:**  
 
 
 **Google Chart Visualization:**  
-![Google Chart Screenshot](./images/google_chart.png)
 
-> Replace the image paths with your actual screenshot file paths in the repository.
 
 ## How to Run
 
