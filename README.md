@@ -1,6 +1,6 @@
 # Project: IoT and Web Servers
 
-In this project, we practiced programming IoT devices and web servers, as well as data visualization. Below is a summary of the activities for each session.
+In this course, we practiced programming IoT devices and web servers, as well as data visualization. Below is a summary of the activities for each lesson.
 
 ## 1 Lesson
 **Task:** Basics of backend programming
