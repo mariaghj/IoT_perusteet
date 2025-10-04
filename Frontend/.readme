@@ -1,0 +1,57 @@
+# Temperature Data Visualization Project
+
+This project demonstrates how to fetch temperature data from a ThingSpeak channel, display it in a simple HTML page, and visualize it using Google Charts.
+
+## Project Overview
+
+The project consists of:  
+- **HTML file**: Contains the structure for displaying the data and chart.  
+- **JavaScript file (`fetch_temperature.js`)**: Fetches data from ThingSpeak, processes it, and draws a Google Chart.  
+
+The goal was to create a simple IoT pipeline:  
+**Device or sensor → ThingSpeak → Frontend visualization (chart & data display).**
+
+## Features Implemented
+
+1. **Fetching Data from ThingSpeak**  
+   - The JavaScript uses the `fetch` API to retrieve JSON data from a ThingSpeak channel.  
+   - It extracts temperature values and timestamps from the feed.  
+   - The extracted data is stored in `window.temperatures` for later use.
+
+2. **Displaying Raw Data**  
+   - The HTML page shows a JSON-formatted list of temperature readings in the `#output` div.  
+   - This allows quick inspection of the retrieved data.
+
+3. **Visualizing Data with Google Charts**  
+   - A Google Area Chart is used to visualize temperature over time.  
+   - The chart includes:  
+     - Time on the x-axis  
+     - Temperature (°C) on the y-axis  
+     - Smooth interpolation for missing values  
+     - Area opacity for better visualization  
+   - Chart automatically updates once data is fetched.
+
+4. **Error Handling**  
+   - If fetching data fails, an error message is displayed in the `#output` div and logged to the console.
+
+## Screenshots
+
+**ThingSpeak Channel Data:**  
+![ThingSpeak Screenshot](./images/thingspeak.png)
+
+**Google Chart Visualization:**  
+![Google Chart Screenshot](./images/google_chart.png)
+
+> Replace the image paths with your actual screenshot file paths in the repository.
+
+## How to Run
+
+1. Open the `index.html` file in a browser.  
+2. Ensure the `fetch_temperature.js` file is in the same folder as your HTML.  
+3. The page will automatically fetch data from ThingSpeak and render the chart.  
+
+## Notes
+
+- The ThingSpeak channel API key is included in the fetch URL. For private channels, make sure to keep your API key secure.  
+- The chart updates automatically when the page loads, showing all historical temperature data from the channel.
+
