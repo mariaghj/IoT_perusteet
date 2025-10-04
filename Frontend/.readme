@@ -37,7 +37,7 @@ The goal was to create a simple IoT pipeline:
 ## Screenshots
 
 **ThingSpeak Channel Data:**  
-![ThingSpeak Screenshot](./images/thingspeak.png)
+
 
 **Google Chart Visualization:**  
 ![Google Chart Screenshot](./images/google_chart.png)
