@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h1>Websocket harjoitus</h1>
+        <input id="msg"></input>
+        <button onclick="sendMessage()">Lähetä</button>
+        <div id="log"></div>
+    </body>
+    <script>
+        const socket = new WebSocket('ws://localhost:8800');
+
+        socket.onopen() = () => {
+            document.getElementById('log').innerText += '<p>Yhteys avattu</p>';
+        };
+        socket.onmessage = event => {
+            document.getElementById('log').innerText += `<p>Vastaanotettu: ${event.data}</p>`;
+        }
+        
+        function sendMessage() {
+            const msg = document.getElementById('msg').value;
+            socket.send(msg);
+            document.getElementById('log').innerText += `<p>Lähetetty: ${msg}</p>`; 
+        }
+    </script>
+</html>
