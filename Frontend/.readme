@@ -6,7 +6,7 @@ This project demonstrates how to fetch temperature data from a ThingSpeak channe
 
 The project consists of:  
 - **HTML file**: Contains the structure for displaying the data and chart.  
-- **JavaScript file (`fetch_temperature.js`)**: Fetches data from ThingSpeak, processes it, and draws a Google Chart.  
+- **JavaScript file**: Fetches data from ThingSpeak, processes it, and draws a Google Chart.  
 
 The goal was to create a simple IoT pipeline:  
 **Device or sensor → ThingSpeak → Frontend visualization (chart & data display).**
